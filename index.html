@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Canvas </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <center>
+        <h1 style="font-size: 45px; color: red;"> Canvas </h1>
+        <canvas width="800px" height="600px" id="myCanvas"> </canvas> <br>
+        <span> Radius / Side - </span>
+        <input type="number" id="radius" value="20">
+
+        <span> Colour - </span>
+        <input type="color" id="color" value="#000000">
+
+        <span>Width of the Line - </span>
+        <input type="number" id="width_of_line" value="2">
+<select name="shape" id="shape" oncharge="change_values();">
+<option value="paint"> Paint </option>
+<option value="line"> Line </option>
+<option value="circle"> Circle </option>
+<option value="square"> Square </option>
+</select>
+<br><br>
+<button onclick="clearArea();">Clear Area!</button>
+    </center>
+</body>
+<script src="main.js"></script>
+</html>

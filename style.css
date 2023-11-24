@@ -1,0 +1,39 @@
+body{
+    background-image: url("https://i.postimg.cc/63cjmfvH/bg1.jpg");
+    background-position: center;
+    background-size: cover ;
+}
+
+#myCanvas{
+    background-color: white;
+    border-style: ridge;
+    border-color: blue;
+    border-width: 5px;
+    border-radius: 5px;
+}
+
+h1
+  {
+      color: red; 
+      font-size: 20px;
+  }
+  
+
+  button {
+    background-color: black;
+    border-color: red ;
+    border-radius: 5px;
+    border-style: ridge;
+    color: white;
+    font-size: 16px;
+    width: 120px;
+    height: 30px;
+  }
+
+  input
+  {
+ border-color: blue;
+ border-style: ridge;
+ border-radius: 6px;
+  }
+  
