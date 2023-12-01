@@ -2,14 +2,14 @@ var mouseEvent = "empty";
 var current_position_of_mouse_x, current_position_of_mouse_y, last_position_x, last_position_y;
 canvas = document.getElementById('myCanvas');
 ctx = canvas.getContext("2d");
-var color = "black";
 var shape = document.getElementById("shape").value;
 var width_of_line = document.getElementById("width_of_line").value;
 var radius = document.getElementById("radius").value;
 canvas.addEventListener("mousedown", mymousedown);
 
 function mymousedown(e) {
-    //color = document.getElementById("color").value;s
+    color = document.getElementById("color").value;
+    console.log(color)
     width_of_line = document.getElementById("width_of_line").value;
     radius = document.getElementById("radius").value;
     mouseEvent = "mouseDown";
@@ -33,7 +33,7 @@ function circle(coord_x, coord_y) {
     ctx.beginPath();
     ctx.strokeStyle = color;
     ctx.lineWidth = width_of_line;
-    ctx.rect(coord_x, coord_y, 0, 2 * Math.PI);
+    ctx.arc(coord_x, coord_y, radius, 0, 2 * Math.PI);
     ctx.stroke();
 }
 function getCurrent_X(e) {
