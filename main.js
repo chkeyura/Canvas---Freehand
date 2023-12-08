@@ -11,7 +11,7 @@ var radius = document.getElementById("radius").value;
 
 new_width = screen.width - 70;
 console.log(new_width);
-new_height = screen.height - 300;
+new_height = screen.height - 400;
 if (width < 992) {
     document.getElementById("myCanvas").width = new_width;
     document.getElementById("myCanvas").height = new_height;
