@@ -41,19 +41,19 @@ function my_touchmove(e) {
         ctx.beginPath();
         ctx.strokeStyle = color;
         ctx.lineWidth = width_of_line;
-        console.log("X = " + last_position_x + ",Y = " + last_position_y);
-        ctx.moveTo(last_position_x, last_position_y);
-        ctx.lineTo(current_position_of_mouse_x, current_position_of_mouse_y);
+        ctx.moveTo(last_position_of_touch_x, last_position_of_touch_y);
+        ctx.lineTo(current_position_of_touch_x, current_position_of_touch_y);
         ctx.stroke();
     } else if (shape == "circle") {
-        circle(current_position_of_mouse_x, current_position_of_mouse_y);
+        circle(current_position_of_touch_x, current_position_of_touch_y);
 
     } else if (shape == "square") {
-        square(current_position_of_mouse_x, current_position_of_mouse_y);
+        square(current_position_of_touch_x, current_position_of_touch_y);
 
     }
     last_position_of_touch_x = current_position_of_touch_x;
     last_position_of_touch_y = current_position_of_touch_y;
+console.log("my_touchmove " + shape)
 }
 
 
